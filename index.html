@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebProMetrics | Digital Marketing Agency Reporting</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                50: '#f0f4fa',
+                100: '#dce5f3',
+                200: '#bdcfe9',
+                300: '#93b0db',
+                400: '#658ecb',
+                500: '#4470b9',
+                600: '#32579a',
+                700: '#2a467d',
+                800: '#253b65', // Deep Blue Base
+                900: '#1e3052', // Darker Deep Blue
+                950: '#0f172a', // Deepest Blue
+              },
+              accent: {
+                50: '#fffbeb',
+                100: '#fef3c7',
+                200: '#fde68a',
+                300: '#fcd34d',
+                400: '#fbbf24', // Bright Deep Yellow
+                500: '#f59e0b', // Primary Deep Yellow
+                600: '#d97706', // Darker Yellow/Amber
+                700: '#b45309',
+                800: '#92400e',
+                900: '#78350f',
+              },
+              slate: {
+                850: '#0f172a', // Matches brand-950 essentially
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+          },
+        },
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      body { font-family: 'Inter', sans-serif; }
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 5rem; /* Offset for sticky navbar */
+      }
+      .hide-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .hide-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.4.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
