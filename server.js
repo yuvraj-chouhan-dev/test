@@ -24,7 +24,7 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 8080;
 const NODE_ENV = process.env.NODE_ENV || 'development';
-const DB_FILE = path.join(__dirname, 'db.json');
+const DB_FILE = path.join(__dirname, '/tmp/db.json');
 const DB_ENABLED = !!process.env.DATABASE_URL;
 
 // Security: Require JWT_SECRET in production
